@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samraju Keshab — CS Student & Aspiring Software Developer</title>
+<meta name="description" content="Portfolio of Samraju Keshab — Computer Science & Engineering student at NIST University, Berhampur. Full Stack Developer | AI/ML Enthusiast. Projects, skills, education and certifications.">
+<meta name="keywords" content="Samraju Keshab, portfolio, Java, Python, React, AI ML, NIST University, Berhampur, software developer">
+<meta property="og:title" content="Samraju Keshab — Portfolio">
+<meta property="og:description" content="Computer Science & Engineering Student — Aspiring Software Developer">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="pre-logo">SAMRAJU&nbsp;KESHAB.</div>
+  <div class="pre-bar"><i></i></div>
+</div>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cDot"></div>
+<div class="cursor-ring" id="cRing"></div>
+
+<div id="progress"></div>
+
+<!-- 3D Background -->
+<canvas id="bg3d"></canvas>
+<div class="grid-overlay"></div>
+<div class="vignette"></div>
+
+<!-- Nav -->
+<nav id="navbar">
+  <div class="logo">SAMRAJU<b>&nbsp;KESHAB</b></div>
+  <button class="burger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
+  <div class="nav-links" id="navLinks">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certs">Certifications</a>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home">
+  <div class="container">
+    <div class="hero-chip"><span class="dot"></span> Open to opportunities & collaborations</div>
+    <h1 class="hero-title">Hi, I'm <span class="grad">Samraju Keshab</span><br>Aspiring Software Developer</h1>
+    <div class="typed-wrap"><span id="typed"></span><span class="caret"></span></div>
+    <p class="hero-sub">Computer Science & Engineering student with strong skills in <strong style="color:var(--txt)">Java, Python, Full Stack Web Development, SQL, and AI/ML</strong>. Experienced in developing web applications, AI-powered systems, and chatbots — passionate about building scalable solutions.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">View My Work →</a>
+      <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+    </div>
+    <div class="hero-socials">
+      <a class="soc" href="https://github.com/Samraju-Keshab" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+      </a>
+      <a class="soc" href="https://linkedin.com/in/samraju-keshab" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+      </a>
+      <a class="soc" href="mailto:samrajukeshab@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a class="soc" href="tel:+918114624178" aria-label="Phone">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="float-chip fc1">☕ Java<small>Core Java Certified</small></div>
+  <div class="float-chip fc2">🐍 Python<small>ML & NLP</small></div>
+  <div class="float-chip fc3">⚛️ React<small>Full Stack</small></div>
+  <div class="float-chip fc4">🤖 AI / ML<small>Chatbots & RAG</small></div>
+  <div class="scroll-hint"><div class="mouse"></div>SCROLL</div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee">
+  <div class="marquee-track" id="marquee"></div>
+</div>
+
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <span class="sec-tag reveal">01 · About Me</span>
+    <h2 class="sec-title reveal">Engineering Ideas Into <em>Reality</em></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a <strong>Computer Science & Engineering student at NIST University, Berhampur</strong>, driven by a deep passion for problem-solving and software development. I love taking an idea from a blank file to a deployed, working product.</p>
+        <p>My work spans <strong>AI-powered systems, intelligent chatbots, and full-stack web applications</strong> — including an AI Mock Interview platform with real-time answer evaluation and a Rasa chatbot with RAG-based self-training.</p>
+        <p>Beyond code, I'm fluent across cultures — speaking <strong>English, Hindi, Odia, Telugu, and Bengali</strong> — and always exploring the next technology to learn.</p>
+        <div class="lang-row">
+          <span class="lang-chip"><b>English</b> · Fluent</span>
+          <span class="lang-chip"><b>Hindi</b> · Fluent</span>
+          <span class="lang-chip"><b>Odia</b> · Native</span>
+          <span class="lang-chip"><b>Telugu</b> · Conversational</span>
+          <span class="lang-chip"><b>Bengali</b> · Conversational</span>
+        </div>
+      </div>
+      <div class="stats reveal">
+        <div class="stat"><div class="num" data-count="4">0</div><div class="lbl">+</div><div class="lbl">Major Projects</div></div>
+        <div class="stat"><div class="num" data-count="15">0</div><div class="lbl">+</div><div class="lbl">Technologies</div></div>
+        <div class="stat"><div class="num" data-count="5">0</div><div class="lbl"></div><div class="lbl">Certifications</div></div>
+        <div class="stat"><div class="num" data-count="5">0</div><div class="lbl"></div><div class="lbl">Languages Spoken</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <div class="container">
+    <span class="sec-tag reveal">02 · Technical Skills</span>
+    <h2 class="sec-title reveal">My <em>Tech Arsenal</em></h2>
+    <div class="skills-grid">
+      <div class="reveal">
+        <div class="skill-item"><div class="skill-top"><b>Java</b><span>90%</span></div><div class="bar"><i data-val="90"></i></div></div>
+        <div class="skill-item"><div class="skill-top"><b>Python</b><span>88%</span></div><div class="bar"><i data-val="88"></i></div></div>
+        <div class="skill-item"><div class="skill-top"><b>HTML / CSS</b><span>92%</span></div><div class="bar"><i data-val="92"></i></div></div>
+        <div class="skill-item"><div class="skill-top"><b>JavaScript</b><span>85%</span></div><div class="bar"><i data-val="85"></i></div></div>
+        <div class="skill-item"><div class="skill-top"><b>SQL (MySQL / PostgreSQL)</b><span>83%</span></div><div class="bar"><i data-val="83"></i></div></div>
+        <div class="skill-item"><div class="skill-top"><b>React</b><span>80%</span></div><div class="bar"><i data-val="80"></i></div></div>
+        <div class="skill-item"><div class="skill-top"><b>AI / Machine Learning</b><span>78%</span></div><div class="bar"><i data-val="78"></i></div></div>
+        <div class="skill-item"><div class="skill-top"><b>C</b><span>75%</span></div><div class="bar"><i data-val="75"></i></div></div>
+      </div>
+      <div class="tech-groups reveal">
+        <div class="tech-group"><h4>⌨ Languages</h4><div class="chips"><span class="chip">Java</span><span class="chip">Python</span><span class="chip">C</span></div></div>
+        <div class="tech-group"><h4>🎨 Frontend</h4><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">React</span></div></div>
+        <div class="tech-group"><h4>🗄 Databases</h4><div class="chips"><span class="chip">MySQL</span><span class="chip">PostgreSQL</span></div></div>
+        <div class="tech-group"><h4>🧠 AI / ML</h4><div class="chips"><span class="chip">Machine Learning</span><span class="chip">Artificial Intelligence</span><span class="chip">NLP</span><span class="chip">RAG</span></div></div>
+        <div class="tech-group"><h4>🛠 Tools</h4><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Linux</span><span class="chip">VS Code</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container">
+    <span class="sec-tag reveal">03 · Projects</span>
+    <h2 class="sec-title reveal">Things I've <em>Built</em></h2>
+    <div class="projects-grid">
+
+      <div class="tilt project-card reveal">
+        <div class="p-head" style="background:linear-gradient(90deg,#00e5ff,#7c3aed)"></div>
+        <div class="p-body">
+          <div class="p-icon">🤖</div>
+          <h3>AI Mock Interview System</h3>
+          <p>An AI-powered interview platform using ML and NLP to generate role-based questions and feedback, with real-time answer evaluation and personalized performance analysis to sharpen interview skills.</p>
+          <div class="p-tags"><span>Python</span><span>ML</span><span>NLP</span><span>Real-time Evaluation</span></div>
+          <div class="p-links">
+            <a href="https://github.com/Samraju-Keshab" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tilt project-card reveal">
+        <div class="p-head" style="background:linear-gradient(90deg,#a855f7,#ff2d95)"></div>
+        <div class="p-body">
+          <div class="p-icon">💬</div>
+          <h3>Rasa Chatbot</h3>
+          <p>An intelligent chatbot built with Rasa and PostgreSQL for storage. Features auto/self-training, RAG implementation, and a local LLM API key setup to keep API costs under control.</p>
+          <div class="p-tags"><span>Rasa</span><span>PostgreSQL</span><span>RAG</span><span>Local LLM</span></div>
+          <div class="p-links">
+            <a href="https://github.com/Samraju-Keshab" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tilt project-card reveal">
+        <div class="p-head" style="background:linear-gradient(90deg,#22c55e,#00e5ff)"></div>
+        <div class="p-body">
+          <div class="p-icon">📝</div>
+          <h3>Quiz Application</h3>
+          <p>An interactive quiz application with multiple-choice questions, score calculation and result tracking. Timer-based quizzes and a fully responsive UI enhance engagement and user experience.</p>
+          <div class="p-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Timer UI</span></div>
+          <div class="p-links">
+            <a href="https://github.com/Samraju-Keshab" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tilt project-card reveal">
+        <div class="p-head" style="background:linear-gradient(90deg,#ff2d95,#a855f7,#00e5ff)"></div>
+        <div class="p-body">
+          <div class="p-icon">🌐</div>
+          <h3>Portfolio Website</h3>
+          <p>Designed and deployed a personal portfolio website — SEO optimized, fully responsive, and brought to life with an animated 3D universe built on WebGL and Three.js.</p>
+          <div class="p-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>SEO</span><span>Three.js</span></div>
+          <div class="p-links">
+            <a href="https://github.com/Samraju-Keshab" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Source Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+  <div class="container">
+    <span class="sec-tag reveal">04 · Education</span>
+    <h2 class="sec-title reveal">My <em>Academic Journey</em></h2>
+    <div class="timeline">
+      <div class="t-item reveal">
+        <div class="t-year">2022 — 2026</div>
+        <div class="t-card"><h4>B.Tech in Computer Science & Engineering</h4><p>NIST University, Berhampur, India</p></div>
+      </div>
+      <div class="t-item reveal">
+        <div class="t-year">2020 — 2022</div>
+        <div class="t-card"><h4>Intermediate (Class XII)</h4><p>Centurion Higher Secondary School</p></div>
+      </div>
+      <div class="t-item reveal">
+        <div class="t-year">2020</div>
+        <div class="t-card"><h4>Matriculation (Class X)</h4><p>Carmel Convent School</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications -->
+<section id="certs">
+  <div class="container">
+    <span class="sec-tag reveal">05 · Certifications</span>
+    <h2 class="sec-title reveal">Credentials & <em>Achievements</em></h2>
+    <div class="certs">
+      <div class="cert reveal"><span class="badge">2023</span><h4>Core Java</h4><p>CTTC</p></div>
+      <div class="cert reveal"><span class="badge">2023</span><h4>Python</h4><p>Infosys</p></div>
+      <div class="cert reveal"><span class="badge">2024</span><h4>Full Stack Web Development</h4><p>RINL</p></div>
+      <div class="cert reveal"><span class="badge">2024</span><h4>Cybersecurity Awareness</h4><p>HP LIFE</p></div>
+      <div class="cert reveal"><span class="badge">2024</span><h4>Android App Development</h4><p>Coursera</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <span class="sec-tag reveal">06 · Contact</span>
+    <h2 class="sec-title reveal">Let's <em>Connect</em></h2>
+    <div class="card-big reveal">
+      <h3>Have an idea, an opportunity, or just want to say hi?</h3>
+      <p class="lead">My inbox is always open — whether it's a project collaboration, internship opportunity, or a tech conversation. I'll get back to you as soon as I can!</p>
+      <div class="contact-cards">
+        <div class="cc"><div class="ico">📧</div><div class="lbl">Email</div><a href="mailto:samrajukeshab@gmail.com">samrajukeshab@gmail.com</a></div>
+        <div class="cc"><div class="ico">📱</div><div class="lbl">Phone</div><a href="tel:+918114624178">+91-8114624178</a></div>
+        <div class="cc"><div class="ico">📍</div><div class="lbl">Location</div><span class="val">Berhampur, India</span></div>
+      </div>
+      <div class="hero-socials" style="justify-content:center">
+        <a class="soc" href="https://github.com/Samraju-Keshab" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a class="soc" href="https://linkedin.com/in/samraju-keshab" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.94v5.8zM7.12 20.45H3.55V9h3.57v11.45zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12z"/></svg>
+        </a>
+        <a class="soc" href="mailto:samrajukeshab@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 <b>Samraju Keshab</b> — Crafted with ❤️, JavaScript & Three.js
+</footer>
+
+<button id="toTop" aria-label="back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
